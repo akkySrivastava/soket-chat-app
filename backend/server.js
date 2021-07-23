@@ -10,10 +10,7 @@ const socketio = require("socket.io");
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: [
-      "http://localhost:3000",
-      "https://chit-chat-socket.herokuapp.com/",
-    ],
+    origin: ["http://localhost:3000", "http://chit-chat-socket.herokuapp.com/"],
   },
 });
 
