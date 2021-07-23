@@ -1,0 +1,141 @@
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 50%;
+  padding: 5px;
+  background-color: #020120;
+  color: white;
+  outline: none;
+  border: 1px solid aqua;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.app-container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  height: 100%;
+  /* background-color: #ddd; */
+
+  margin: 10px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.app-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #020120;
+  color: aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.app-top > h1 {
+  padding: 10px 30px;
+}
+
+.app-top > span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.app-top > input {
+  font-size: 30px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.message-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 90%;
+  background-color: #ddd;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  height: 100%;
+
+  flex: 1;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+  padding: 10px 10px;
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  width: 70%;
+  background-color: #020120;
+  max-width: fit-content;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid aqua;
+  margin: 10px;
+}
+
+.chat-footer {
+  display: flex;
+  background-color: #020120;
+  padding: 5px;
+  /* border: 2px solid aqua; */
+}
+
+form {
+  display: flex;
+  width: 100%;
+}
+
+.chat-footer > form > input {
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+
+.chat-footer > form > input:focus {
+  border: 1px solid aqua;
+  border-radius: 3px;
+}
+
+.you {
+  width: 70%;
+  background-color: rgb(139, 139, 211);
+  max-width: fit-content;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #020120;
+  margin: 10px;
+  margin-left: auto;
+}
