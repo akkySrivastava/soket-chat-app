@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 
 let socket;
 
-const ENDPOINT = "https://chit-chat-socket.herokuapp.com/";
+const ENDPOINT = "http://chit-chat-socket.herokuapp.com/";
 
 function App() {
   const [message, setMessage] = useState("");
