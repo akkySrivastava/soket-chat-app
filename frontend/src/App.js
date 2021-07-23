@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 
 let socket;
 
-const ENDPOINT = "http://localhost:80/";
+const ENDPOINT = "https://chit-chat-socket.herokuapp.com/";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -45,7 +45,11 @@ function App() {
         userId: pId,
         name: Pname,
       };
-      await axios.post("/api/chat", body).then((res) => console.log(res.data));
+      if (pId !== "") {
+        await axios
+          .post("/api/chat", body)
+          .then((res) => console.log(res.data));
+      }
     }
   };
 
@@ -60,7 +64,11 @@ function App() {
         userId: sId,
         name: Sname,
       };
-      await axios.post("/api/chat", body).then((res) => console.log(res.data));
+      if (sId !== "") {
+        await axios
+          .post("/api/chat", body)
+          .then((res) => console.log(res.data));
+      }
     }
   };
 
